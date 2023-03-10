@@ -14,3 +14,180 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+/*Title bar*/
+.header{
+  display : flex;
+  /*justify-content: center;*/
+  justify-content: space-between;
+  align-items: center;
+  padding:10px;
+  margin: 0;
+  border-bottom: 1.5px solid #ddd;
+  border-top: 1.5px solid #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.center-header{
+  justify-content: center;
+  align-items: center;
+  padding-right: 700px;
+}
+
+.center-header h1{
+  padding-left: 23px;
+}
+
+.menu button{
+  background-color: white;
+  border : none;
+  border-radius: 5px;
+  padding: 5px 14px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.menu button:hover{
+  background-color: #ddd;
+}
+/**/
+
+/*Sidebar*/
+.sidebar{
+  width: 20%;
+  height: 100vh;
+  border-right: 1.5px solid #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1.5px solid #ddd;
+}
+
+.sidebar-header h1{
+  margin: 0;
+}
+
+.sidebar button{
+  background-color: white;
+  border : none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.sidebar button:hover{
+  background-color: #ddd;
+  color: rgb(21, 122, 21)
+}
+
+.sidebar-note{
+  padding: 10px;
+  border-bottom: 1.5px solid #ddd;
+  cursor: pointer;
+}
+
+.sidebar-note.active{
+  background-color: rgb(20, 72, 101);
+  color: white;
+
+}
+
+.sidebar-note p{
+  margin: 10px 0;
+}
+
+.sidebar-note small{
+  display: block;
+  color: #999;
+}
+
+.sidebar-note:hover{
+  background-color: rgb(183, 226, 250);
+  color: black;
+}
+/**/
+
+/*Home Display*/
+.home-display{
+  font-weight: lighter;
+  text-align: center;
+  color:#999;
+  padding: 280px 80px 80px 280px
+}
+/**/
+
+/*Editing a Note Display*/
+#edit-header{
+  display: flex;
+  flex-direction: row;
+  /*justify-content: space-between;
+  align-items: center;*/
+  padding: 10px;
+}
+
+#edit-header ::placeholder{
+  font-weight: lighter;
+  color:#999;
+}
+
+.edit-title{
+  width: 80%;
+  height: 40px;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#edit-header button{
+  background-color: white;
+  border: none;
+   color: black;
+  padding: 12px 16px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#edit-header button:hover{
+  background-color: black;
+  color: white;
+}
+
+/**/
+
+
+/*Dividing up the Layout*/
+#body{
+  display: flex;
+  flex-direction: row;
+}
+
+.main{
+  width: 80%;
+  height: 100vh;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/**/
+
+/* Temporary Stuff for now */
+.hidden{
+  display: none;
+}
+
+.new-main{
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/**/
+.quill{
+  height: 100%;
+}
